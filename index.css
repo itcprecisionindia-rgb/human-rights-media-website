@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'Libre Baskerville', serif;
+  --color-navy: #0B1F3A;
+  --color-navy-2: #15345d;
+  --color-red: #C1121F;
+  --color-red-dark: #940d17;
+  --color-ink: #10233e;
+  --color-paper: #f7f8fa;
+}
+
+:root { font-family: 'DM Sans', sans-serif; color: #10233e; background: #fff; font-synthesis: none; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+* { box-sizing: border-box; }
+::selection { background: #C1121F; color: white; }
+.font-display { font-family: 'Libre Baskerville', serif; }
+.grid-lines { background-image: linear-gradient(rgba(11,31,58,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(11,31,58,.07) 1px, transparent 1px); background-size: 34px 34px; }
+.hero-pattern { background-image: radial-gradient(circle at 80% 24%, rgba(193,18,31,.18), transparent 28%), linear-gradient(120deg, rgba(11,31,58,.99), rgba(11,31,58,.86)); }
+.reveal { animation: reveal .75s cubic-bezier(.22,.8,.25,1) both; }
+@keyframes reveal { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+.floating { animation: float 3s ease-in-out infinite; }
+
+input, textarea { outline: none; }
+input:focus, textarea:focus { border-color: #C1121F; box-shadow: 0 0 0 3px rgba(193,18,31,.12); }
